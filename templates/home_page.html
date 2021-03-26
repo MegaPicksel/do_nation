@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<h3>Do Nation pledges</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Total number of pledges</th>
+        <th scope="col">Total amount of CO2 saved (kg)</th>
+        <th scope="col">Total amount of water saved (kg)</th>
+        <th scope="col">Total amount of waste saved (kg)</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ amount_of_pledges }}</td>
+            <td>{{ total_co2_savings }}</td>
+            <td>{{ total_water_savings }}</td>
+            <td>{{ total_waste_savings }}</td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}
